@@ -981,8 +981,8 @@ function initZonar() {
 			});
 		}
 		var greenIcon = L.icon({
-			iconUrl: 'images/marker.png',
-			iconSize: [40, 40],
+			iconUrl: 'images/Asset 3.png',
+			iconSize: [40, 60],
 			popupAnchor: [0, -26]
 		});
 		L.marker(latlog, {
