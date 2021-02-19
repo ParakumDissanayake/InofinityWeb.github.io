@@ -491,7 +491,7 @@ blockquote p {
 }
 .left-header_social {
 	position:absolute;
-	bottom:190px;
+	bottom:210px;
 	left:50%;
 	margin-left:-22px;
 	width:40px;
@@ -527,7 +527,7 @@ blockquote p {
 .left-header_social li a {
 	position:relative;
 	z-index:2;
-	color:#767676;
+	color:#00c3ff;
 	transition: all 200ms ease-out;
 }
 .left-header_social li:hover a {
@@ -568,8 +568,8 @@ blockquote p {
 .share-btn span {
 	color: #fff;
 	position:relative;
-	top:106px;
-	left:18px;
+	top:56px;
+	padding: 0 5px 0 5px;
 	float:left;
 	font-weight:400;
 	letter-spacing:2px;
@@ -577,17 +577,20 @@ blockquote p {
 	font-size:10px;
 	z-index:2;
 }
+
 .share-btn  span i {
 	position: absolute;
 	transition: all 0.2s ease-in-out;
-	left:7px;
+	left:25px;
 	width:30px;
 	padding-left:2px;
 	height:30px;
-	top:-86px;
+	top:-36px;
 	color:#fff;
 	line-height:28px;
+	font-size: 20px;
 }
+
 .share-btn.uncl-share span i:before {
 	content:'\f00d';
 }
@@ -5481,3 +5484,33 @@ section.parallax-section .bg {
 }
 
 /*custom CSS */
+.pulse {
+	animation: waggle 1s 3s forwards ease-out infinite;
+}
+
+@keyframes waggle {
+	0% {
+	  transform: none;
+	}
+	50% {
+	  transform: rotateZ(-20deg) scale(1.2);
+	}
+	60% {
+	  transform: rotateZ(25deg) scale(1.2);
+	}
+	67.5% {
+	  transform: rotateZ(-15deg) scale(1.2);
+	}
+	75% {
+	  transform: rotateZ(15deg) scale(1.2);
+	}
+	82.5% {
+	  transform: rotateZ(-12deg) scale(1.2);
+	}
+	85% {
+	  transform: rotateZ(0) scale(1.2);
+	}
+	100% {
+	  transform: rotateZ(0) scale(1);
+	}
+  }

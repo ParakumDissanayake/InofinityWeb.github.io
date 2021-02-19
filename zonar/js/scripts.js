@@ -1155,7 +1155,7 @@ function initZonar() {
     });
     // Share   ------------------
     $(".share-container").share({
-        networks: ['facebook', 'pinterest', 'twitter', 'linkedin', 'tumblr']
+        networks: ['facebook', 'linkedin']
     });
     var shrcn = $(".share-container"),
         swra = $(".share-wrapper"),
@@ -1163,11 +1163,11 @@ function initZonar() {
         shic = $(".share-icon"),
         ssbtn = $(".showshare");
     function showShare() {
-        ssbtn.addClass("uncl-share");
+        /*ssbtn.addClass("uncl-share")
         shrcn.removeClass("isShare");
         TweenMax.to(swra, 0.6, {
             force3D: false,
-            width: "225px",
+            width: "100px",
             ease: Expo.easeInOut,
             onComplete: function () {
                 TweenMax.to(clsh, 0.4, {
@@ -1185,7 +1185,8 @@ function initZonar() {
                     }, 130 * a);
                 });
             }
-        });
+        });*/
+        window.location.href = "/zonar/contacts.html";
     }
     function hideShare() {
         ssbtn.removeClass("uncl-share");
@@ -1388,3 +1389,6 @@ function readyFunctions() {
     initvideo();
     initZonar();
 }
+
+
+// custom JS
