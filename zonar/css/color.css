@@ -1,8 +1,8 @@
 /*--
 	Color styles
---*/ body{
-	background: url('https://wallpapercave.com/wp/wp4247435.jpg');
-}
+--*/
+
+
 
 .left-header_social li:before , .left-header:after , .hero-slider-wrap_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before    , .tc-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before , .nhw-col.menuhol-dec-vis:before , .share-icon  , .folio-list-title h2:before    , .single-page-title h1:before , .hero-section:after , .page-scroll-nav_wrap li a:after  , .ci_details:before , .accordion a.toggle span:before, .accordion a.toggle span:after     , .custom-skillbar , .line-item:first-child:before  , .line-item:last-child:before  , .hero-corner-dec2 , .hero-decor-numb:before  , .parallax-circle:before   , .fixed-column-wrap_title h2:before  , .section-separator:after , .section-title:before , .section-separator span , .pdcw_list  li:before , .process-details:before  ,  .fcwc-wrap .swiper-pagination-bullet.swiper-pagination-bullet-active:before  , .fixed-bottom-panel .gallery-filters a.gallery-filter-active:after , .grid-det_link:before  , .swiper-scrollbar-drag  , .list div.list-btn i , .fwc-title:before , .content-nav li a.rn:before , .fs-slider-wrap_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:before , .fs-slider-item .half-hero-wrap:before  , .fhhw .half-hero-wrap:before , .pagination  a:after , .ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active   , .hero-section-dec  , .start-btn:before , .grid-carousel-title  h3:before , .hero_promo-wrap:before , .hero_promo-title:after , .element-item:before , .main_social li a:hover   , .pl-row  span.pl-row-anim2 , .hiddec-anim:before , .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover  {
 	background:#6f4b9f;
@@ -34,8 +34,7 @@
 }
 
 .hc_dec:after , .hc_dec_color , .hc_dec_color:after {
-	background-color: rgba(41, 41, 41, 0.4);
-    backdrop-filter: blur(10px);
+	background-color: #6f4b9f;
 }
 
 .share-btn{
