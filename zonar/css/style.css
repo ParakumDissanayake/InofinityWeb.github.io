@@ -38,6 +38,7 @@ body {
 	background:#313131;
 	color: #000;
 	font-family: 'Mukta Vaani', sans-serif;
+	overflow-y: hidden;
 }
 @-o-viewport {
 	width: device-width;
@@ -47,6 +48,9 @@ body {
 }
 @viewport {
 	width: device-width;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 /* ---------Page preload--------------------------------------*/
 .loader {
@@ -2402,7 +2406,8 @@ section.parallax-section .bg {
 	width:80px;
 	height:75px;
 	z-index:10;
-    -webkit-transform: translate3d(0,0,0)
+    -webkit-transform: translate3d(0,0,0);
+	background:#6f4b9f !important;
 }
 .fs-pg-idicator_wrap .progress-indicator , .fs-pg-idicator_wrap .slider-progress-bar {
     width: 50px;
@@ -5474,3 +5479,5 @@ section.parallax-section .bg {
 		background-position: center;
 	}
 }
+
+/*custom CSS */
