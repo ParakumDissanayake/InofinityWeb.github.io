@@ -1157,9 +1157,12 @@ function initZonar() {
     });
     var shrcn = $(".share-container"),
         swra = $(".share-wrapper"),
-        clsh = $(".close-share-btn"),
+        clsh = $(".close"),
         shic = $(".share-icon"),
         ssbtn = $(".showshare");
+
+    var modal = document.getElementById("myModal");
+
     function showShare() {
         
         /*ssbtn.addClass("uncl-share")
@@ -1207,14 +1210,14 @@ function initZonar() {
             }
         });*/
 
-        $('#new-proj-modal').modal('hide');
+        modal.style.display = "none";
     }
     clsh.on("click", function () {
         hideShare();
     });
     ssbtn.on("click", function () {
         if ($(".share-container").hasClass("isShare")) {
-            var modal = document.getElementById("myModal");
+            
             modal.style.display = "block";
         }
         else hideShare();

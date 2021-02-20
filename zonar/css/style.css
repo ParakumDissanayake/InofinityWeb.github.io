@@ -742,6 +742,7 @@ blockquote p {
 	float:left;
 	margin-top:15px;
 	display:block;
+	border-radius: 25px;
 }
 /* ------share------------------------------------------------------------ */
 .share-wrapper {
@@ -5554,14 +5555,10 @@ section.parallax-section .bg {
 	background-color: rgba(0, 0, 0, 0.596); /* Black w/ opacity */
   }
 
-  .modal > *:not(.modal-content) {
+  /*#main > *:not(.modal-content, .modal) {
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
-  }
-  .modal > *:not(.modal-content) {
-	filter: blur(8px);
-	-webkit-filter: saturate(0%);
-  }
+  }*/
 
   .modal-title{
 	padding: 10px 0 0 0;
@@ -5577,7 +5574,8 @@ section.parallax-section .bg {
 	padding: 5px 20px 5px 20px;
 	border: 1px solid #00c3ff;
 	width: 50%;
-	height: fit-content
+	height: fit-content;
+	border-radius: 10px;
   }
 
   .modal-backdrop {
