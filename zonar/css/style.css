@@ -2265,7 +2265,7 @@ section.parallax-section .bg {
   padding-top: 10px;
   color: #666;
   text-align: left;
-  font-size: 10px;
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
@@ -3791,12 +3791,12 @@ section.parallax-section .bg {
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  /* color: #6f4b9f; */
+  color: #6f4b9f;
   padding-bottom: 30px;
   position: relative;
 }
 .main-about h2 span {
-  /* color: #4ca9c4; */
+  color: #4ca9c4;
 }
 .main-about h2:before {
   content: "";
