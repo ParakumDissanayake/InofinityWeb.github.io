@@ -946,10 +946,8 @@ function initZonar() {
             $.post(a, {
                 name: $("#name").val(),
                 email: $("#email").val(),
-                phone: $("#phone").val(),
                 subject: $('#subject').val(),
-                comments: $("#comments").val(),
-                verify: $('#verify').val()
+                comments: $("#comments").val()
 
             }, function (a) {
                 document.getElementById("message").innerHTML = a;
@@ -981,8 +979,8 @@ function initZonar() {
 			});
 		}
 		var greenIcon = L.icon({
-			iconUrl: 'images/marker.png',
-			iconSize: [40, 40],
+			iconUrl: 'images/Asset 3.png',
+			iconSize: [40, 60],
 			popupAnchor: [0, -26]
 		});
 		L.marker(latlog, {
@@ -1155,19 +1153,23 @@ function initZonar() {
     });
     // Share   ------------------
     $(".share-container").share({
-        networks: ['facebook', 'pinterest', 'twitter', 'linkedin', 'tumblr']
+        networks: ['facebook', 'linkedin']
     });
     var shrcn = $(".share-container"),
         swra = $(".share-wrapper"),
-        clsh = $(".close-share-btn"),
+        clsh = $(".close"),
         shic = $(".share-icon"),
         ssbtn = $(".showshare");
+
+    var modal = document.getElementById("myModal");
+
     function showShare() {
-        ssbtn.addClass("uncl-share");
+        
+        /*ssbtn.addClass("uncl-share")
         shrcn.removeClass("isShare");
         TweenMax.to(swra, 0.6, {
             force3D: false,
-            width: "225px",
+            width: "100px",
             ease: Expo.easeInOut,
             onComplete: function () {
                 TweenMax.to(clsh, 0.4, {
@@ -1185,12 +1187,13 @@ function initZonar() {
                     }, 130 * a);
                 });
             }
-        });
+        });*/
+        window.location.href = "/zonar/contacts.html";
     }
     function hideShare() {
         ssbtn.removeClass("uncl-share");
         shrcn.addClass("isShare");
-        TweenMax.to($(".share-icon"), 1.0, {
+        /*TweenMax.to($(".share-icon"), 1.0, {
             force3D: false,
             opacity: "0"
         });
@@ -1205,13 +1208,18 @@ function initZonar() {
                     ease: Expo.easeInOut
                 });
             }
-        });
+        });*/
+
+        modal.style.display = "none";
     }
     clsh.on("click", function () {
         hideShare();
     });
     ssbtn.on("click", function () {
-        if ($(".share-container").hasClass("isShare")) showShare();
+        if ($(".share-container").hasClass("isShare")) {
+            
+            modal.style.display = "block";
+        }
         else hideShare();
     });
 }
@@ -1388,3 +1396,6 @@ function readyFunctions() {
     initvideo();
     initZonar();
 }
+
+
+// custom JS
