@@ -946,10 +946,8 @@ function initZonar() {
             $.post(a, {
                 name: $("#name").val(),
                 email: $("#email").val(),
-                phone: $("#phone").val(),
                 subject: $('#subject').val(),
-                comments: $("#comments").val(),
-                verify: $('#verify').val()
+                comments: $("#comments").val()
 
             }, function (a) {
                 document.getElementById("message").innerHTML = a;

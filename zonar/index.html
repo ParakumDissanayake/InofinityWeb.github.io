@@ -369,33 +369,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-xs-4 new-proj-cards">
+                <div class="col-md-12 col-xs-12 new-proj-cards">
                     <div class="row">
-                        <p>Request a quote</p>
+                        <p>Request a quote <i class="fa fa-file-text-o jump" aria-hidden="true"></i></p>
                     </div>
                     <div class="row">
-                        <i class="fa fa-file-text-o jump" aria-hidden="true"></i>
+                        <div id="contact-form" class="fl-wrap">
+                            <div id="message"></div>
+                            <form  class="custom-form" action="php/contact.php" name="contactform" id="contactform" method="POST">
+                               <fieldset>
+                                  <div class="row">
+                                     <div class="col-sm-6">
+                                        <input type="text" name="name" id="name" placeholder="Your Name *" value=""/>
+                                     </div>
+                                     <div class="col-sm-6">
+                                        <input type="text"  name="email" id="email" placeholder="Email Address *" value=""/>
+                                     </div>
+                                  </div>
+                                  <select>
+                                      <option selected>- Select the product / service you require -</option>
+                                      <option>Website Design</option>
+                                      <option>Online Webstore</option>
+                                      <option>Software Development</option>
+                                      <option>Graphic Design</option>
+                                      <option>Software Consultancy</option>
+                                      <option>Social Media Marketing</option>
+                                  </select>
+                                  <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Your Requirement Summary:" class="cnt-anim"></textarea>
+                                  <button class="btn fl-btn color-bg" id="submit"><span>Send Message</span> </button>
+                               </fieldset>
+                            </form>
+                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-xs-4 new-proj-cards">
-                    <div class="row">
-                        <p>Call us</p>
-                    </div>
-                    <div class="row">
-                        <i class="fa fa-phone jump2" aria-hidden="true"></i>
-                    </div>
-                    
-                    
-                </div>
-                <div class="col-md-4 col-xs-4 new-proj-cards">
-                    
-                    <div class="row">
-                        <p>Write us</p>
-                    </div>
-                    <div class="row">
-                        <i class="fa fa-envelope-o jump3" aria-hidden="true"></i>
-                    </div>
-                </div>
+                
             </div>
 
           
