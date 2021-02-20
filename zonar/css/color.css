@@ -31,6 +31,10 @@
 	background:#00c3ff;
 }
 
+.swiper-scrollbar-drag {
+	background:#00c3ff;
+}
+
 .start-btn  , blockquote{
 	border-color:#6f4b9f; /*#00c3ff;*/
 }

@@ -1163,6 +1163,7 @@ function initZonar() {
         shic = $(".share-icon"),
         ssbtn = $(".showshare");
     function showShare() {
+        
         /*ssbtn.addClass("uncl-share")
         shrcn.removeClass("isShare");
         TweenMax.to(swra, 0.6, {
@@ -1191,7 +1192,7 @@ function initZonar() {
     function hideShare() {
         ssbtn.removeClass("uncl-share");
         shrcn.addClass("isShare");
-        TweenMax.to($(".share-icon"), 1.0, {
+        /*TweenMax.to($(".share-icon"), 1.0, {
             force3D: false,
             opacity: "0"
         });
@@ -1206,13 +1207,18 @@ function initZonar() {
                     ease: Expo.easeInOut
                 });
             }
-        });
+        });*/
+
+        $('#new-proj-modal').modal('hide');
     }
     clsh.on("click", function () {
         hideShare();
     });
     ssbtn.on("click", function () {
-        if ($(".share-container").hasClass("isShare")) showShare();
+        if ($(".share-container").hasClass("isShare")) {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+        }
         else hideShare();
     });
 }
